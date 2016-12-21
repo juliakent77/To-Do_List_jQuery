@@ -18,15 +18,15 @@ $('submit').click(function(event) {
   var deleteButton = $(add.('button'));
   var clearDiv = $(add.('div'));
 
-  li.className = 'fadeIn';
-  input.type = 'checkbox';
-  p.innerHTML = todo;
-  deleteButton.innerHTML = 'Delete';
-  clearDiv.className = 'clearfix';
+  li.className = $('fadeIn');
+  input.type = $('checkbox');
+  p.innerHTML = $(todo);
+  deleteButton.innerHTML = $('Delete');
+  clearDiv.className = $('clearfix');
 
-  deleteButton.addEventListener('click', function(event) {
-    elem.parentNode.remove();
-  });
+  $(deleteButton).click function(event) {
+    $(elem).parent().remove();
+  };
 
   $('li').append(input);
   $('li').append(p);
