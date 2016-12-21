@@ -1,8 +1,3 @@
-
-// var todoForm = document.getElementById('todo-form');
-// var todoList = document.getElementById('todo-list');
-
-
 var todoForm = $('todo-form');
 var todoList = $('todo-list');
 
@@ -10,7 +5,8 @@ $('submit').click(function(event) {
   event.preventDefault();
   var elem = $(event.target);
 
-  var todo = elem.todoInput.value;
+  // var todo = elem.todoInput.val();
+  var todo = $("input:text").val();
 
   var li = $(add.('li'));
   var input = $(add.('input'));
@@ -24,7 +20,7 @@ $('submit').click(function(event) {
   deleteButton.innerHTML = $('Delete');
   clearDiv.className = $('clearfix');
 
-  $(deleteButton).click function(event) {
+  $(deleteButton).click(function(event) {
     $(elem).parent().remove();
   };
 
